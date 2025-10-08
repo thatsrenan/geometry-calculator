@@ -96,6 +96,14 @@ public class ShapeCreator {
 
     public void createPyramid() {
         System.out.println("Pyramid");
-        // Implementar futuramente
+
+        System.out.print("Base Side: ");
+        double side = sc.nextDouble();
+        System.out.print("Height: ");
+        double height = sc.nextDouble();
+
+        Pyramid pyramid = new Pyramid(side, height);
+        System.out.println("Volume: " + pyramid.calculateVolume());
+        System.out.println("Surface Area: " + pyramid.calculateSurfaceArea());
     }
 }
